@@ -1,0 +1,20 @@
+{
+  "text": {
+    "Mode": "Холод",
+    "Warning": "Вимкн.за розкладом...",
+    "Setpt": "8.0 °C",
+    "COP": "0.0 ",
+    "InWater": "30.0 °C",
+    "OutTemp": "20.0 °C",
+    "OutWater": "28.0 °C",
+    "OutHTemp": "19.0 °C",
+    "LiqRef": "25.0 °C",
+    "DisTemp": "40 °C",
+    "GasRef": "26.0 °C",
+    "CmpFreq": "0 Hz",
+    "Flow": "0.0 м3/год",
+    "Curent": "0.0 A",
+    "HLoad": "0.0 кВт",
+    "ElPower": "0.0 кВт"
+  }
+}

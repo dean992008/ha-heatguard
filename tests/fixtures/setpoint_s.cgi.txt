@@ -1,0 +1,15 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"></head><body>
+<!-- Synthetic protocol fixture: no real installation data. -->
+<form action="setpoint_s.cgi" method="post">
+<input type=radio name="Mode_s" value="Вимк." >
+<input type=radio name="Mode_s" value="Ввімк." checked>
+<input type=radio name="HeatMode_s" value="Холод" checked>
+<input type=radio name="HeatMode_s" value="Тепло" >
+<input type=radio name="HeatMode_s" value="Дистанц." >
+<input type=radio name="OnMode_s" value="Денний" >
+<input type=radio name="OnMode_s" value="Нічний" >
+<input type=radio name="OnMode_s" value="За розкладом" checked>
+<input type=text name="HeatSetPoint_s" value="34.0 °C">
+<input type=text name="CoolSetPoint_s" value="8.0 °C">
+<input type=submit name=set value="Запам’ятати">
+</form></body></html>

@@ -1,0 +1,44 @@
+{
+  "title": "HeatGuard",
+  "config": {
+    "step": {
+      "user": {
+        "title": "HeatGuard",
+        "description": "Local connection. An empty password field means an empty password.",
+        "data": {
+          "host": "Server address",
+          "username": "Username",
+          "password": "Password (may be empty)"
+        }
+      },
+      "reconfigure": {
+        "title": "HeatGuard",
+        "description": "Local connection. An empty password field means an empty password.",
+        "data": {
+          "host": "Server address",
+          "username": "Username",
+          "password": "Password (may be empty)"
+        }
+      },
+      "reauth_confirm": {
+        "title": "HeatGuard",
+        "description": "Local connection. An empty password field means an empty password.",
+        "data": {
+          "host": "Server address",
+          "username": "Username",
+          "password": "Password (may be empty)"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "Invalid credentials",
+      "cannot_connect": "Cannot connect or invalid controller response",
+      "invalid_host": "Enter an HTTP(S) address without path or credentials"
+    },
+    "abort": {
+      "already_configured": "Device already configured",
+      "reconfigure_successful": "Configuration updated",
+      "reauth_successful": "Authentication updated"
+    }
+  }
+}

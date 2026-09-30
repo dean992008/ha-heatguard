@@ -26,6 +26,17 @@ class Coordinator:
     async def command(self, key, value):
         self.calls.append((key, value))
 
+@pytest.mark.parametrize('key', ['HLoad', 'ElPower'])
+@pytest.mark.parametrize('value,expected', [('1.25 кВт', 1250), ('0.0 кВт', 0)])
+def test_power_converted_to_watts(key, value, expected):
+    from custom_components.heatguard.sensor import HeatGuardSensor
+    coordinator = Coordinator()
+    coordinator.data['telemetry'] = dict(coordinator.data['telemetry'], **{key: value})
+    sensor = HeatGuardSensor(coordinator, key, 'Power', 'W', 'power')
+    assert sensor.native_value == expected
+    assert sensor.native_unit_of_measurement == 'W'
+    assert sensor.suggested_unit_of_measurement == 'W'
+
 @pytest.mark.asyncio
 async def test_all_platforms_states_and_commands():
     coordinator = Coordinator()

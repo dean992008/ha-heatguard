@@ -19,3 +19,4 @@ tools/prepare_public.py
 tools/audit_public.py
 PUBLIC_README.md
 PUBLICATION.md
+tools/set_power_units.py
